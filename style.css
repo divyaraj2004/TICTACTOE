@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    display: flex;
+    background: linear-gradient(to right,#E8CBC0,#636FA4);
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+nav li{
+    color: blueviolet;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    list-style: none;
+    font-family: 'Raleway', sans-serif;}
+nav img{
+    padding: 2px;
+    height: 20px;
+}
+
+.gameCont{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-top: 12px;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+
+
+}
+.box{  
+    font-size: 9vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box:hover{
+    cursor: pointer;
+    background-color: #e2e6fc;
+}
+.box1{
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+.box2{
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+.box3{
+    border-bottom: 2px solid black;
+}
+.box4{
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+.box5{
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+.box6{
+    border-bottom: 2px solid black;
+}
+.box7{
+    border-right: 2px solid black;
+}
+.box8{
+    border-right: 2px solid black;
+}
+
+.info{
+    font-family: 'Raleway', sans-serif;
+    padding:30px;
+}
+h1{
+    padding: 12px;
+}
+.data{
+    font-weight: lighter;
+}
+.btn{
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+}
+#reset{
+    border-radius: 5px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 12px;
+    width: 70px;
+    border: 2px solid black;
+}
+#reset:hover{
+    background-color: #b7c4ff;
+    cursor: pointer;
+
+}
+
+@media screen and  (max-width: 700px){
+
+    .gameCont{
+        flex-wrap: wrap;
+    }
+    .info{
+        text-align: center;
+    }
+    .btn{
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,20vw);
+        grid-template-rows: repeat(3,20vw);
+    }
+    .box{
+        font-size: 10vw;
+    }
+    
+}
